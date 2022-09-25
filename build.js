@@ -105,7 +105,7 @@ let makeReadme = tag => `# magic-wormhole npm package for ${tag}
 
 This is an npm package containing a binary for [magic-wormhole](https://magic-wormhole.readthedocs.io/en/latest/), built from [the Go implementation](https://github.com/psanford/wormhole-william) (wormhole-william) for ${tag}.
 
-It is UNOFFICIAL: it is not associated with either the main magic-wormhole project nor with wormhole-william.
+It is UNOFFICIAL: it is not associated with either the main magic-wormhole project or with wormhole-william.
 
 See [the magic-wormhole-npm project](https://github.com/bakkot/magic-wormhole-npm) for details.
 `;

@@ -1,12 +1,20 @@
 # magic-wormhole-npm
 
-This is an npm package which provides easy access to [magic-wormhole](https://magic-wormhole.readthedocs.io/en/latest/), using binaries from [the Go implementation](https://github.com/psanford/wormhole-william) (wormhole-william).
+[magic-wormhole](https://magic-wormhole.readthedocs.io/en/latest/) is a project to let you send files easily and securely between computers.
 
-It is UNOFFICIAL: it is not associated with either the main magic-wormhole project nor with wormhole-william.
+This is an npm package which provides easy access to magic-wormhole, using binaries from [the Go implementation](https://github.com/psanford/wormhole-william) (wormhole-william).
+
+This project is UNOFFICIAL: it is not associated with either the main magic-wormhole project or with wormhole-william.
 
 ## Use
 
-If you have a recent (≥ 7) version of `npm` installed, you should be able to run `npx magic-wormhole` on any supported platform to run magic-wormhole. For example, `npx magic-wormhole send foo.zip` will prepare `foo.zip` to be sent. See the [magic-wormhole docs](https://magic-wormhole.readthedocs.io/en/latest/) for more about magic-wormhole.
+Running `npx magic-wormhole send file.zip` will prepare `file.zip` to be sent, and will print a "wormhole code" like `7-crossover-clockwork`.
+
+Running `npx magic-wormhole recv 7-crossover-clockwork` (using the code printed out by the previous command) on a different computer will then download that file. No coordination beyond the code is necessary.
+
+This requires a recent version (≥ 7) of `npm` to be installed. If you don't already have `npm` installed, you will probably find it easier to download a binary from [wormhole-william](https://github.com/psanford/wormhole-william) directly.
+
+This project can interoperate with magic-wormhole and wormhole-william, so if one computer already has one of those set up, you don't need to use this package on that machine.
 
 ## Details
 
