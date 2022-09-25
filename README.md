@@ -2,6 +2,8 @@
 
 This is an npm package which provides easy access to [magic-wormhole](https://magic-wormhole.readthedocs.io/en/latest/), using binaries from [the Go implementation](https://github.com/psanford/wormhole-william) (wormhole-william).
 
+It is UNOFFICIAL: it is not associated with either the main magic-wormhole project nor with wormhole-william.
+
 ## Use
 
 If you have a recent (≥ 7) version of `npm` installed, you should be able to run `npx magic-wormhole` on any supported platform to run magic-wormhole. For example, `npx magic-wormhole send foo.zip` will prepare `foo.zip` to be sent. See the [magic-wormhole docs](https://magic-wormhole.readthedocs.io/en/latest/) for more about magic-wormhole.

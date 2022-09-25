@@ -4,7 +4,7 @@ let fs = require('fs');
 let path = require('path');
 let child_process = require('child_process');
 
-let version = '0.0.5-pre-1';
+let version = '1.0.6-ad51cf3';
 
 let platforms = [
   {

@@ -20,5 +20,6 @@ for (let dir of dirs) {
   dir = path.join(__dirname, 'build', dir);
   // there has got to be a better way to do this...
   fs.writeFileSync(path.join(dir, '.npmrc'), `//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}\nregistry=https://registry.npmjs.org/`, 'utf8');
-  child_process.execSync(`npm --prefix=${JSON.stringify(dir)} whoami`, { stdio: 'inherit' });
+  process.chdir(dir)
+  child_process.execSync(`npm publish`, { stdio: 'inherit' });
 }
